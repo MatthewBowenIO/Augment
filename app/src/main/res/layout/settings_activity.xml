@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_720">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/SettingsText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/CPUTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SettingsText"
+        android:text="CPU Threshold: "/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="CPU Threshold"
+        android:layout_below="@+id/CPUTextView"
+        android:id="@+id/CPUThresholdEditText"/>
+
+    <TextView
+        android:id="@+id/MemoryTextView"
+        android:layout_below="@+id/CPUThresholdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memory Threshold: "/>
+
+    <EditText
+        android:layout_below="@+id/MemoryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Mermory Threshold"
+        android:id="@+id/MemoryThresholdEditText"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="Apply"
+        android:layout_gravity="bottom"
+        android:id="@+id/ApplySettings"/>
+</RelativeLayout>
